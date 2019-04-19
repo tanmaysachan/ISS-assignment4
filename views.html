@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module views</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>views</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/tani/ISS/2018111023-introsoftwaresys/Assignments/Assignment-4/views.py">/home/tani/ISS/2018111023-introsoftwaresys/Assignments/Assignment-4/views.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-add_experiment"><strong>add_experiment</strong></a>()</dt><dd><tt>add_experiment&nbsp;page<br>
+&nbsp;<br>
+Asks&nbsp;the&nbsp;user&nbsp;inputs&nbsp;for&nbsp;an&nbsp;experiment.<br>
+Adds&nbsp;the&nbsp;corresponding&nbsp;experiment&nbsp;to&nbsp;the&nbsp;database,<br>
+which&nbsp;can&nbsp;then&nbsp;be&nbsp;used&nbsp;on&nbsp;the&nbsp;experiment&nbsp;page.</tt></dd></dl>
+ <dl><dt><a name="-add_question"><strong>add_question</strong></a>()</dt><dd><tt>add_question&nbsp;page<br>
+&nbsp;<br>
+User&nbsp;can&nbsp;add&nbsp;a&nbsp;question&nbsp;to&nbsp;the&nbsp;database,&nbsp;which&nbsp;can&nbsp;be&nbsp;used<br>
+by&nbsp;the&nbsp;quiz.<br>
+Quiz&nbsp;must&nbsp;be&nbsp;supplied&nbsp;with&nbsp;a&nbsp;corresponding&nbsp;answer.</tt></dd></dl>
+ <dl><dt><a name="-check_feedbacks"><strong>check_feedbacks</strong></a>()</dt><dd><tt>check_feedback&nbsp;page<br>
+&nbsp;<br>
+Displays&nbsp;all&nbsp;the&nbsp;feedbacks&nbsp;so&nbsp;far.</tt></dd></dl>
+ <dl><dt><a name="-experiment"><strong>experiment</strong></a>()</dt><dd><tt>experiment&nbsp;page<br>
+&nbsp;<br>
+Asks&nbsp;the&nbsp;user&nbsp;to&nbsp;select&nbsp;language,&nbsp;and&nbsp;corpus&nbsp;size.<br>
+Displays&nbsp;the&nbsp;relevant&nbsp;experiment&nbsp;by&nbsp;querying&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+Images&nbsp;hosted&nbsp;on&nbsp;Imgur.</tt></dd></dl>
+ <dl><dt><a name="-feedback"><strong>feedback</strong></a>()</dt><dd><tt>feedback&nbsp;page<br>
+&nbsp;<br>
+User&nbsp;can&nbsp;enter&nbsp;their&nbsp;feedback.</tt></dd></dl>
+ <dl><dt><a name="-get_all_questions"><strong>get_all_questions</strong></a>()</dt><dd><tt>get_all_questions&nbsp;page<br>
+&nbsp;<br>
+User&nbsp;can&nbsp;check&nbsp;on&nbsp;all&nbsp;existing&nbsp;questions.<br>
+This&nbsp;page&nbsp;does&nbsp;not&nbsp;reveal&nbsp;the&nbsp;answers&nbsp;however.</tt></dd></dl>
+ <dl><dt><a name="-intro"><strong>intro</strong></a>()</dt><dd><tt>introduction&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-objective"><strong>objective</strong></a>()</dt><dd><tt>objective&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-procedure"><strong>procedure</strong></a>()</dt><dd><tt>procedure&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-quiz"><strong>quiz</strong></a>()</dt><dd><tt>quiz&nbsp;page<br>
+&nbsp;<br>
+Selects&nbsp;5&nbsp;random&nbsp;questions&nbsp;from&nbsp;the&nbsp;database,<br>
+and&nbsp;displays&nbsp;them.<br>
+Clicking&nbsp;on&nbsp;the&nbsp;submit&nbsp;button&nbsp;evaluates&nbsp;them.<br>
+The&nbsp;user&nbsp;is&nbsp;made&nbsp;aware&nbsp;of&nbsp;the&nbsp;questions&nbsp;they&nbsp;attempted&nbsp;wrong.</tt></dd></dl>
+ <dl><dt><a name="-show_experiments"><strong>show_experiments</strong></a>()</dt><dd><tt>show_experiments&nbsp;page<br>
+&nbsp;<br>
+Displays&nbsp;all&nbsp;existing&nbsp;experiments&nbsp;in&nbsp;the&nbsp;database.</tt></dd></dl>
+ <dl><dt><a name="-theory"><strong>theory</strong></a>()</dt><dd><tt>theory&nbsp;page</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>db</strong> = &lt;SQLAlchemy engine=None&gt;<br>
+<strong>last_set_of_questions</strong> = []<br>
+<strong>main</strong> = &lt;flask.blueprints.Blueprint object&gt;<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>reset</strong> = False</td></tr></table>
+</body></html>

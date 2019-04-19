@@ -1,0 +1,15 @@
+Week1:
+> Get the frontent ready.
+> Modify HTML/CSS and JS to follow correct paths.
+> Port the code from the old Vlabs design to the new one.
+> Prepare README.md
+Done by: Tushar Joshi
+
+Week2:
+> Complete the backend.
+> Use flask to make the website dynamic, add experiments, quiz, and feedback
+  functionality.
+> Write documentation.
+> Use pydocs to autogenerate documentation.
+> Add basic tests.
+Done by: Tanmay Sachan

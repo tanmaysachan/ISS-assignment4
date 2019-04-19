@@ -1,0 +1,12 @@
+<html>
+{% for cat, msg in get_flashed_messages(with_categories = true) %}
+{% if cat == "error" %}
+<span class="alert alert-danger">{{ msg }}</span>
+{% endif %}
+{% endfor %}
+<form action={{ url_for('main.add_question') }} method="post">
+    Question: <input type="text" name="question"> </br>
+    Answer: <input type="text" name="answer"> </br>
+    <input type="submit" value="Submit"> </br>
+</form>
+</html>
