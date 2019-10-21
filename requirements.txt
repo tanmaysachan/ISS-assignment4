@@ -57,4 +57,4 @@ tox==3.8.6
 unicorn==1.0.1
 urllib3==1.24.1
 virtualenv==16.4.3
-Werkzeug==0.15.2
+Werkzeug==0.15.3
