@@ -20,7 +20,7 @@ idna==2.8
 intervaltree==2.1.0
 itsdangerous==1.1.0
 Jinja2==2.10
-Mako==1.0.9
+Mako==1.2.2
 MarkupSafe==1.1.1
 more-itertools==7.0.0
 Naked==0.1.31
